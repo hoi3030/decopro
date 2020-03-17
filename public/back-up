@@ -1,0 +1,15 @@
+@media (min-width: 200px) and (max-width: 520px) {
+#upCon1{
+ margin-top:-600px;
+}
+}
+@media (min-width: 521px) and (max-width: 668px) {
+    #upCon1{
+     margin-top:-780px;
+    }
+    }
+@media (min-width: 669px) and (max-width: 768px) {
+    #upCon1{
+        margin-top:-850px;
+    }
+    }

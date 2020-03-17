@@ -1,0 +1,17 @@
+.col-md-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: row; }
+
+    @media (min-width: 200px) and (max-width: 630px) {
+
+        .col-md-3 {
+           
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%; }
+
+    }    

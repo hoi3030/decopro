@@ -1,0 +1,105 @@
+
+.lotties1div{
+    height: 300px;
+    width: 140px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 0%;
+
+}
+#upper{
+    height: 550px!important;
+}
+.lotties1{
+    height: 80px;
+    width: 120px;
+    
+}
+.advantages{
+    
+    width: 20%;
+    height: auto;
+    margin-left:2.5% ;
+    margin-right: 2.5%;
+    text-align: center;
+    margin-top: -8%;
+}
+#icon1,#icon2,#icon3,#icon4{
+    font-size: 50px;
+    color: #222;
+   
+}
+#upCon1{
+    margin-top: 8%;padding-left: 5%;
+    padding-right:5%;display: flex;flex-direction: row;height: auto;
+    width: 100%;
+    
+    
+}
+.icontitle{
+    font-size: 17px;
+    padding: 8px 13px 8px 13px;
+    border-radius: 3px;
+    background-color: coral;
+    color: #fff!important;
+    font-weight: 700;
+}
+.icona{
+font-size: 15px;
+color: #222!important;
+}
+
+
+
+@media (min-width: 200px) and (max-width: 520px) {
+    #up2{
+        padding-bottom: 0px;
+    
+    }
+    #upCon1{
+        margin-top: -350px;
+        background-color: rgb(255, 255, 255);
+        flex-direction: column;
+    }
+    .lotties1div{
+        margin-top: -340px;
+        margin-right: 0%;
+    }
+    .advantages{
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+    }
+    #section-counter{
+        background-color: rgb(95, 93, 87);
+    }
+   
+
+    
+
+}
+@media (min-width: 521px) and (max-width: 668px) {
+    #upCon1{
+        margin-top: -550px;
+        
+    }
+
+    .lotties1div{
+        margin-top: -640px;
+        margin-right: 0%;
+    }
+   
+
+  
+}
+@media (min-width: 669px) and (max-width: 768px) {
+    #upCon1{
+        margin-top: -700px;
+        
+    }
+    .advantages{
+        width: 100%;
+    }
+
+    
+    }
