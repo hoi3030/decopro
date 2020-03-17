@@ -185,32 +185,22 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .more3 {
-    font-size: 17px;
-    color: #fff !important;
+    font-size: 16px;
+    color: #2c2c2b !important;
     text-transform: uppercase;
     text-decoration: none;
     z-index: 99;
-    width: 100%;
-    border-radius: 2px;
+    width: 90%;
+    border-radius: 5px;
     display: inline-block;
     border: none;
     padding: 6px;
     transition: all 0.4s ease 0s;
-    background-color: rgb(4, 117, 117);
-    font-weight: 300;
+    background-color: #dfbe4a;
+    font-weight: 500;
     margin-left: 0%;
     position: relative;
     line-height: 40px;
-}
-
-.more3:hover {
-    background: #07f7ff;
-    letter-spacing: 3px;
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
-    transition: all 0.4s ease 0s;
-    background-position: 500% 100%;
 }
 
 input[type="checkbox"] {
@@ -227,11 +217,11 @@ input[type="checkbox"] {
     border-width: 0;
     margin-left: 0px;
     transition: all .2s linear;
-    border: 2px solid rgb(3, 104, 134);
+    border: 2px solid #2c2c2b;
 }
 
 input[type="checkbox"]:checked {
-    background-color: rgb(3, 104, 134);
+    background-color: #dfbe4a;
 
 }
 
@@ -266,11 +256,7 @@ input[type="checkbox"]:focus {
     z-index: 999;
 }
 
-.whatsapp:hover {
-    box-shadow: 0px 1px 39px 7px rgb(245, 224, 132);
-    -webkit-box-shadow: 0px 1px 39px 7px rgb(245, 224, 132);
-    -moz-box-shadow: 0px 1px 39px 7px rgb(245, 224, 132);
-}
+
 
 .box-minmax {
     margin-top: 30px;
@@ -304,7 +290,7 @@ input[type="checkbox"]:focus {
     height: 1px;
     cursor: pointer;
     box-shadow: none;
-    background: #222;
+    background: #2c2c2b;
     border-radius: 0px;
     border: 0px solid #010101;
 }
@@ -322,11 +308,11 @@ input[type="checkbox"]:focus {
 .rs-range::-webkit-slider-thumb {
     box-shadow: none;
     border: 0px solid #fff;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
     height: 42px;
     width: 22px;
     border-radius: 22px;
-    background: #222;
+    background: #dfbe4a;
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -20px;

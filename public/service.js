@@ -25,7 +25,7 @@ function showSliderValue() {
     if(rangeSlider.value==14){ rangeV = "900,000 - 1,000,000"}
     if(rangeSlider.value==15){ rangeV = "1,000,000+"}
     
-  rangeBullet.innerHTML = rangeV;
+  rangeBullet.innerHTML = "預算："+rangeV;
  
 }
 
@@ -45,7 +45,7 @@ function showSliderValue2() {
     if(rangeSlider1.value==12){ rangeT = "十二月"}
     
     
-  rangeBullet1.innerHTML = rangeT;
+  rangeBullet1.innerHTML = "預計開工時間："+rangeT;
  
 }
 var type = "家居裝修"
