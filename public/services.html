@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>DecroPro - </title>
+  <title>Decopro | 裝修配對平台 | 免費上門度呎報價</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -34,15 +34,14 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Decropro.</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span>
+      <a class="navbar-brand" href="index.html">DecoPro</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> 
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">主頁</a></li>
+          <li class="nav-item active"><a href="index.html" class="nav-link">首頁</a></li>
           <li class="nav-item"><a href="recruitment.html" class="nav-link">師傅加盟</a></li>
           <li class="nav-item"><a href="example.html" class="nav-link">精選案例</a></li>
           <li class="nav-item dropdown">
@@ -52,8 +51,8 @@
                 <a class="dropdown-item" href="services.html">上門度呎</a>
               </div>
           </li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">服務流程</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">裝修專欄</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">關於我們</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">裝修專欄</a></li>
           <li class="nav-item cta"><a href="contact.html" class="nav-link"><span>立即查詢</span></a></li>
         </ul>
       </div>
@@ -62,7 +61,7 @@
   <!-- END nav -->
 
   <div class="hero-wrap js-fullheight">
-    <div class="overlay"></div>
+    <div class="overlay" id="upper" ></div>
     <div id="particles-js"></div>
     <div class="container">
       <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -76,7 +75,7 @@
     </div>
   </div>
 
-  <section class="ftco-section">
+  <section class="ftco-section" >
     <div class="container">
 
 
@@ -132,17 +131,17 @@
           </div>
           <div class="infowrapper">
             <div class="info">
-              <label class="infolabel">聯絡人 </label> <b style="color: brown;">*</b><br>
+              <label class="infolabel">聯絡人 </label> <b style="color: brown;">*</b><br><br>
               <input class="infoinput" id="contact">
 
             </div>
             <div class="info">
-              <label class="infolabel">電話 </label> <b style="color: brown;">*</b><br>
+              <label class="infolabel">電話 </label> <b style="color: brown;">*</b><br><br>
               <input class="infoinput" id="phone3" type="number" minlength="8" maxlength="8" >
 
             </div>
             <div class="info">
-              <label class="infolabel">地區 <b style="color: brown;">*</b></label>
+              <label class="infolabel">地區 <b style="color: brown;">*</b></label><br><br>
               <select class="region" id="region">
                 <option selected disabled>請選擇住址區域</option>
                 <option disabled>香港島</option>
@@ -174,39 +173,26 @@
 
             </div>
             <div class="info">
-              <label class="infolabel">屋苑 </label> <b style="color: brown;">*</b><br>
+              <label class="infolabel">屋苑 </label> <b style="color: brown;">*</b><br><br>
               <input class="infoinput" id="address">
 
             </div>
             <div class="info">
-              <label class="infolabel">電郵</label><br>
+              <label class="infolabel">電郵</label><br><br>
               <input class="infoinput" id="email">
 
             </div>
-            <div class="info">
-              <label class="infolabel">優惠代碼</label><br>
-              <input class="infoinput" id="discount">
-
-            </div>
+           
             <div class="info" id="timeinfo">
               <label class="infolabel" style="margin-bottom: 30px;">聯絡時間 </label> <b style="color: brown;">*</b><br>
+              <div class="timeselectdiv">
               <select class="timeselect" id="timeselect">
                 <option>上午</option>
                 <option>下午</option>
-              </select>
-              <select class="timeselect2" id="timeselect2">
-                <option value="1點至2點">1 點 至 2 點</option>
-                <option value="2點至3點">2 點 至 3 點</option>
-                <option value="3點至4點">3 點 至 4 點</option>
-                <option value="4點至5點">4 點 至 5 點</option>
-                <option value="5點至6點">5 點 至 6 點</option>
-                <option value="6點至7點">6 點 至 7 點</option>
-                <option value="7點至8點">7 點 至 8 點</option>
-                <option value="8點至9點">8 點 至 9 點</option>
-                <option value="9點至10點">9 點 至 10 點</option>
-                <option value="10點至11點">10 點 至 11 點</option>
-                <option value="11點至12點">11 點 至 12 點</option>
-              </select>
+              </select> <a style="font-weight: 300; color: #222;font-size: 30px;">|</a>
+              <input class="infoinput" id="timeselect2" placeholder="18:00-20:00">
+             
+            </div>
             </div>
             <div class="info" id="photoinfo">
               <label class="infolabel">上載參考圖片 / 檔案</label><br>
@@ -215,10 +201,7 @@
             </div>
             <div class="info2">
               <input type="checkbox" id="c1" ><label  class="selecta">已閱讀並同意 <b style="color: rgb(0, 0, 0);"><u>服務條款 </u></b> <b style="color: brown;">*</b></label> <br>
-              <input type="checkbox" id="c2" ><label  class="selecta">我對 <b style="color: rgb(0, 0, 0);">裝修貸款優惠 </b>感到興趣</label><br>
-              <input type="checkbox" id="c3" ><label  class="selecta">我對 <b style="color: rgb(0, 0, 0);">搬運服務</b> 感到興趣</label><br>
-              <input type="checkbox" id="c4" ><label  class="selecta">我對 <b style="color: rgb(0, 0, 0);">除甲醛及深層清潔服務</b> 感到興趣</label><br>
-              <input type="checkbox" id="c5" ><label  class="selecta">我希望使用 <b style="color: rgb(0, 0, 0);">信用卡</b> 付款</label><br>
+             
               <br>
               
               <a> - 師傅上門、睇位、報價均完全免費</a><br>
@@ -241,7 +224,7 @@
     </div>
   </div>
     <div style="text-align:center;margin-bottom: 50px;">
-      <a class="more3" style="z-index: -89;">確認送出</a>
+      <a class="more3" >確認送出</a>
       <br>
       <br>
       <br>

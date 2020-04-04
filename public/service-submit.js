@@ -15,6 +15,7 @@ function makeid(length){
 
 
 $(".more3").click(function () {
+    alert("ok")
     checkbox=[]
 
     if (document.getElementById('c1').checked) {
@@ -24,34 +25,10 @@ $(".more3").click(function () {
     } else {
         
     }
-    if (document.getElementById('c2').checked) {
-       
-        checkbox.push("c2")
-        console.log(checkbox)
-    } else {
-       
-    }
-    if (document.getElementById('c3').checked) {
-        
-        checkbox.push("c3")
-        console.log(checkbox)
-    } else {
-        
-    }
-    if (document.getElementById('c4').checked) {
-       
-        checkbox.push("c4")
-        console.log(checkbox)
-    } else {
-        
-    }
-    if (document.getElementById('c5').checked) {
-        
-        checkbox.push("c5")
-        console.log(checkbox)
-    } else {
-        
-    }
+    
+    
+    
+   
     checkbox = checkbox.toString()
     if (type == "none") {
         alert("88")
@@ -108,12 +85,8 @@ $(".more3").click(function () {
         return false
     }
     console.log(email)
-    discount = document.getElementById("discount").value;
-    if (discount== "") {
-        alert("no d")
-        return false
-    }
-    console.log(discount)
+    
+   
     time1 = document.getElementById("timeselect").value;
     if (time1== "") {
         alert("no t1")
