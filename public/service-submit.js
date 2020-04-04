@@ -15,7 +15,8 @@ function makeid(length){
 
 
 $(".more3").click(function () {
-    alert("ok")
+    ddk = localStorage.getItem("ddl")
+    console.log(ddk)
     checkbox=[]
 
     if (document.getElementById('c1').checked) {
@@ -98,13 +99,15 @@ $(".more3").click(function () {
         alert("no t2")
         return false
     }
+    
+    
     console.log(time2)
     var code=makeid(6);
     var unix = new Date().getTime();
+   
     var messageRef = firebase.database().ref('leads');
-    var newMessageRef = messageRef.child(phone);
+    var newMessageRef = messageRef.child(code);
     newMessageRef.set({
-     
      name: contact,
      phone: phone,
      region: region,
@@ -117,6 +120,7 @@ $(".more3").click(function () {
      timestamp:unix,
      opinion:message,
      Source:"Web",
+     downloadURL:ddk,
      items:checkbox
      
  
@@ -127,5 +131,3 @@ $(".more3").click(function () {
 });
 
 
-function saveMessage(){
-  }

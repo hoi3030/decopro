@@ -27,31 +27,26 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="recruitment.css">
+    <link rel="stylesheet" href="service.css">
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
       <div class="container">
         <a class="navbar-brand" href="index.html">DecoPro</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> 
         </button>
   
-        <div class="collapse navbar-collapse" id="ftco-nav">
+        <div class="collapse navbar-collapse" id="ftco-nav" >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="index.html" class="nav-link">首頁</a></li>
             <li class="nav-item"><a href="recruitment.html" class="nav-link">師傅加盟</a></li>
             <li class="nav-item"><a href="example.html" class="nav-link">精選案例</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">裝修估價</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="services.html">網上估價</a>
-                  <a class="dropdown-item" href="services.html">上門度呎</a>
-                </div>
-            </li>
+            <li class="nav-item"><a href="services.html" class="nav-link">免費報價</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">關於我們</a></li>
             <li class="nav-item"><a href="blog.html" class="nav-link">裝修專欄</a></li>
-            <li class="nav-item cta"><a href="contact.html" class="nav-link"><span>立即查詢</span></a></li>
+            <li class="nav-item cta"><a href="services.html" class="nav-link"><span>網上估價</span></a></li>
           </ul>
         </div>
       </div>
@@ -72,7 +67,7 @@
       </div>
     </div>
     
-    <section>
+    <section class="sectiondiv1">
       <div class="advantagesDiv" >
         <div class="advantages">
           <img src="images/icon001.png"  alt="" style="width:70px;height:70px;"><br><br>
@@ -97,8 +92,80 @@
         
   
       </div>
+      <div class="mainform">
+        
+        
+        <div>
+          <div class="budget"><br><br><br>
+            
+              <div class="infowrapper">
+                <div class="info">
+                  <label class="infolabel">公司負責人 </label> <b style="color: brown;">*</b><br><br>
+                  <input class="infoinput" id="contact">
+    
+                </div>
+                <div class="info">
+                  <label class="infolabel">電話 </label> <b style="color: brown;">*</b><br><br>
+                  <input class="infoinput" id="phone3" type="number" minlength="8" maxlength="8" >
+    
+                </div>
+                <div class="info">
+                  <label class="infolabel">專業 <b style="color: brown;">*</b></label><br><br>
+                  <select class="region" id="specialist">
+                    <option value="裝修判頭" >裝修判頭</option>
+                    <option value="設計師">設計師</option>
+    
+                  </select>
+    
+    
+    
+                </div>
+                <div class="info">
+                  <label class="infolabel">入行年資</label> <b style="color: brown;">*</b><br><br>
+                  <input class="infoinput" id="address">
+    
+                </div>
+                <div class="info">
+                  <label class="infolabel">判頭或項目管理年資</label><br><br>
+                  <input class="infoinput" id="email">
+    
+                </div>
+                <div class="info">
+                  <label class="infolabel">公司名稱</label><br><br>
+                  <input class="infoinput" id="name">
+    
+                </div>
+                <div class="info">
+                  <label class="infolabel">公司地址</label><br><br>
+                  <input class="infoinput" id="location1">
+    
+                </div>
+               
+               
+                </div><br><br><br>
+                
+              
+    
+    
+              </div>
+    
+    
+    
+    
+    
+    
+    
+            </div><br>
+            <div  align="center">
+              <textarea placeholder="補充資料" id="message"></textarea>
+            </div>
+          </div>
+    
+    
+        </div><br>
+      </div><br><br>
       <div style="text-align:center;margin-bottom: 50px;width: 100%;margin-left: auto;margin-right: auto;">
-        <a class="more3" >立即加盟平台</a>
+        <a class="more3">立即加盟平台</a>
        
         <br>
         <br>
@@ -124,13 +191,14 @@
             <div class="ftco-footer-widget mb-4 ml-5">
               
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">主頁</a></li>
-                <li><a href="#" class="py-2 d-block">師傅加盟</a></li>
-                <li><a href="#" class="py-2 d-block">精選案例</a></li>
-                <li><a href="#" class="py-2 d-block">裝修估價</a></li>
-                <li><a href="#" class="py-2 d-block">設計精選</a></li>
-                <li><a href="#" class="py-2 d-block">裝修攻略</a></li>
-                <li><a href="#" class="py-2 d-block">關於我們</a></li>
+                <li><a href="index.html" class="py-2 d-block">主頁</a></li>
+                <li><a href="recruitment.html" class="py-2 d-block">師傅加盟</a></li>
+                <li><a href="example.html" class="py-2 d-block">精選案例</a></li>
+                <li><a href="services.html" class="py-2 d-block">免費估價</a></li>
+                <li><a href="blog.html" class="py-2 d-block">裝修攻略</a></li>
+                <li><a href="about.html" class="py-2 d-block">關於我們</a></li>
+                <li><a href="terms.html" class="py-2 d-block">使用條款．免責聲明及隱私權聲明</a></li>
+                
               </ul>
             </div>
           </div>
@@ -182,6 +250,9 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+  <script src="config.js"></script>
+  <script src="recruitment.js"></script>
     
   </body>
 </html>

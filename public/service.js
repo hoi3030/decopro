@@ -85,3 +85,49 @@ $("#region").focus(function(){
 });
 
 
+    //function to save file
+    function uploadFile(){
+      
+        // Created a Storage Reference with root dir
+        var storageRef = firebase.storage().ref();
+        // Get the file from DOM
+        var file = document.getElementById("files").files[0];
+        console.log(file);
+        
+        //dynamically set reference to the file name
+        var uploadTask = storageRef.child(file.name).put(file);
+        uploadTask.on('state_changed', function(snapshot){
+            // Observe state change events such as progress, pause, and resume
+            // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+            var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+            console.log('Upload is ' + progress + '% done');
+            switch (snapshot.state) {
+              case firebase.storage.TaskState.PAUSED: // or 'paused'
+                console.log('Upload is paused');
+                break;
+              case firebase.storage.TaskState.RUNNING: // or 'running'
+                console.log('Upload is running');
+                break;
+            }
+          }, function(error) {
+            // Handle unsuccessful uploads
+          }, function() {
+            // Handle successful uploads on complete
+            // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+            uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+              console.log('File available at', downloadURL);
+              downloadURL = downloadURL.toString();
+              localStorage.setItem("ddl",downloadURL)
+              ddk = localStorage.getItem("ddl")
+              console.log(ddk)
+            });
+          });
+          
+        
+        
+      }
+
+      
+
+
+
