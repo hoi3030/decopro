@@ -28,13 +28,14 @@ function timeConverter(UNIX_timestamp){
       title= snap.child("title").val()
       console.log(title)
       content= snap.child("content").val()
+      slicecontent = content.substring(0,70)+"…"
       type= "#"+snap.child("type").val()
       console.log(content)
 
 
-      img = "<img class='articleimg' src='https://www.google.com/images/srpr/logo4w.png' >"
+      img = "<img class='articleimg' src='images/sample.jpg' >"
 
-      $("#blogcontent").prepend("<tr><td>"+img+"</td><td>"+type+"<br>"+title+"</td><td>"+date+"</td></tr>")
+      $("#blogcontent").prepend("<tr><td class='imgtd'>"+img+"</td><td><a class='typea'>"+type+"</a><br>"+title+"<br><a class='sliceclass'>"+slicecontent+"</a></td><td>"+date+"</td></tr>")
 
 
   })

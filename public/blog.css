@@ -1,7 +1,10 @@
 #blog{
     width: 100%;
-    text-align: center;
+    text-align: left;
 
+}
+.imgtd{
+    width: 10%;
 }
 
 table td:first-of-type{
@@ -14,14 +17,24 @@ table td:first-of-type{
     border-bottom-right-radius: 10px;
   }
 
+  .typea{
+      font-size: 13px;
+      color: #919191 !important;
+  }
+
+  .sliceclass{
+      font-size: 11px;
+      font-weight: 400 !important;
+  }
+
 td{
 
     color: #2c2c2b;
     font-weight: 500;
 
-    font-size: 17px;
+    font-size: 20px;
   background: #f3f3f3;
-  padding: 35px;
+  padding: 14px;
 
 }
 
