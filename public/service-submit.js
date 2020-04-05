@@ -15,6 +15,8 @@ function makeid(length){
 
 
 $(".more3").click(function () {
+    ddk = localStorage.getItem("ddl")
+    console.log(ddk)
     checkbox=[]
 
     if (document.getElementById('c1').checked) {
@@ -24,34 +26,10 @@ $(".more3").click(function () {
     } else {
         
     }
-    if (document.getElementById('c2').checked) {
-       
-        checkbox.push("c2")
-        console.log(checkbox)
-    } else {
-       
-    }
-    if (document.getElementById('c3').checked) {
-        
-        checkbox.push("c3")
-        console.log(checkbox)
-    } else {
-        
-    }
-    if (document.getElementById('c4').checked) {
-       
-        checkbox.push("c4")
-        console.log(checkbox)
-    } else {
-        
-    }
-    if (document.getElementById('c5').checked) {
-        
-        checkbox.push("c5")
-        console.log(checkbox)
-    } else {
-        
-    }
+    
+    
+    
+   
     checkbox = checkbox.toString()
     if (type == "none") {
         alert("88")
@@ -108,12 +86,8 @@ $(".more3").click(function () {
         return false
     }
     console.log(email)
-    discount = document.getElementById("discount").value;
-    if (discount== "") {
-        alert("no d")
-        return false
-    }
-    console.log(discount)
+    
+   
     time1 = document.getElementById("timeselect").value;
     if (time1== "") {
         alert("no t1")
@@ -125,13 +99,15 @@ $(".more3").click(function () {
         alert("no t2")
         return false
     }
+    
+    
     console.log(time2)
     var code=makeid(6);
     var unix = new Date().getTime();
+   
     var messageRef = firebase.database().ref('leads');
-    var newMessageRef = messageRef.child(phone);
+    var newMessageRef = messageRef.child(code);
     newMessageRef.set({
-     
      name: contact,
      phone: phone,
      region: region,
@@ -144,6 +120,7 @@ $(".more3").click(function () {
      timestamp:unix,
      opinion:message,
      Source:"Web",
+     downloadURL:ddk,
      items:checkbox
      
  
@@ -154,5 +131,3 @@ $(".more3").click(function () {
 });
 
 
-function saveMessage(){
-  }

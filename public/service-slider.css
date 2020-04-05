@@ -14,7 +14,7 @@
     height: 1px;
     cursor: pointer;
     box-shadow: none;
-    background: #222;
+    background: #dfbe4a;
     border-radius: 0px;
     border: 0px solid #010101;
 }
@@ -23,7 +23,7 @@
     height: 1px;
     cursor: pointer;
     box-shadow: none;
-    background: #222;
+    background: #dfbe4a;
     border-radius: 0px;
     border: 0px solid #010101;
 }
@@ -34,7 +34,7 @@
     height: 42px;
     width: 22px;
     border-radius: 22px;
-    background: #222;
+    background: #dfbe4a;
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -20px;
